@@ -1,0 +1,20 @@
+{
+  "extends": "../tsconfig_base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "ES2015",
+    "rootDir": ".",
+    "outDir": "../dist/client",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../shared"
+    }
+  ]
+}
